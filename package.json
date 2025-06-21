@@ -7,11 +7,29 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "set NODE_OPTIONS=--no-warnings eslint .",
+    "lint:fix": "set NODE_OPTIONS=--no-warnings eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@nuxt/eslint": "^1.4.1",
+    "@nuxt/icon": "^1.14.0",
+    "@tailwindcss/vite": "^4.1.10",
+    "eslint": "^9.29.0",
     "nuxt": "^3.17.5",
+    "tailwindcss": "^4.1.10",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.15.0",
+    "@iconify-json/tabler": "^1.2.19",
+    "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2"
+  },
+  "lint-staged": {
+    "*": "npm run lint"
   }
 }
