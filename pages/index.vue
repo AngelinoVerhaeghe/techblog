@@ -42,7 +42,7 @@ const stats = ref([
     <section class="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center w-full" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80');">
       <div class="absolute inset-0 bg-black/70 bg-gradient-to-br from-black via-indigo-900/80 to-black/80" />
       <div class="relative z-10 w-full max-w-3xl mx-auto px-4 text-center flex flex-col items-center">
-        <div class="mb-6">
+        <div class="pt-24 mb-6">
           <span class="inline-block bg-white/10 text-white text-sm px-5 py-2 rounded-full backdrop-blur font-medium border border-white/20 shadow-md">
             New: Explore our latest deep dives on Vue, Nuxt, and web tech! <a href="/blog" class="font-semibold underline underline-offset-2 hover:text-blue-200 ml-1">Read articles <span aria-hidden="true">→</span></a>
           </span>
