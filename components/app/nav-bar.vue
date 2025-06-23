@@ -48,6 +48,7 @@ const isHome = computed(() => route.path === "/");
               <path d="M2 24C6 14 18 14 24 24C30 34 42 34 46 24" :stroke="isHome ? '#38bdf8' : '#6366f1'" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M2 24C6 34 18 34 24 24C30 14 42 14 46 24" :stroke="isHome ? '#6366f1' : '#38bdf8'" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
+            <span class="text-xl font-bold" :class="isHome ? 'text-white' : 'text-gray-900'">TechBlog</span>
             <span class="sr-only">Home</span>
           </NuxtLink>
         </div>
