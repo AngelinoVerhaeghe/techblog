@@ -39,30 +39,32 @@ const stats = ref([
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white py-20">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          Welcome to
-          <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-            TechBlog
+    <section class="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center w-full" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80');">
+      <div class="absolute inset-0 bg-black/70 bg-gradient-to-br from-black via-indigo-900/80 to-black/80" />
+      <div class="relative z-10 w-full max-w-3xl mx-auto px-4 text-center flex flex-col items-center">
+        <div class="mb-6">
+          <span class="inline-block bg-white/10 text-white text-sm px-5 py-2 rounded-full backdrop-blur font-medium border border-white/20 shadow-md">
+            New: Explore our latest deep dives on Vue, Nuxt, and web tech! <a href="/blog" class="font-semibold underline underline-offset-2 hover:text-blue-200 ml-1">Read articles <span aria-hidden="true">→</span></a>
           </span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-xl">
+          Insights and Tutorials for Modern Web Developers
         </h1>
-        <p class="text-xl md:text-2xl mb-8 text-indigo-100 max-w-3xl mx-auto leading-relaxed">
-          Your gateway to modern web development insights, tutorials, and cutting-edge technologies.
-          Built with Nuxt 3, Vue 3, and Tailwind CSS.
+        <p class="text-lg md:text-xl text-white/80 mb-10 max-w-xl mx-auto">
+          TechBlog brings you the latest in web development, JavaScript frameworks, and best practices. Level up your skills with hands-on guides, tips, and industry news.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <NuxtLink
             to="/blog"
-            class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            class="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors duration-300 text-base"
           >
             Explore Articles
           </NuxtLink>
           <NuxtLink
             to="/about"
-            class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-300"
+            class="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold border border-white/20 shadow-lg transition-colors duration-300 text-base"
           >
-            Learn More
+            Learn More <span aria-hidden="true">→</span>
           </NuxtLink>
         </div>
       </div>

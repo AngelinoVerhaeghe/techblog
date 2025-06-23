@@ -1,5 +1,7 @@
 <script setup>
-// Default layout component
+import { useRoute } from "vue-router";
+
+const route = useRoute();
 </script>
 
 <template>
@@ -8,7 +10,10 @@
     <AppNavBar />
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div v-if="route.path === '/'">
+      <NuxtPage />
+    </div>
+    <main v-else class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <NuxtPage />
     </main>
 
